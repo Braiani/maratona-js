@@ -287,7 +287,7 @@ Use a função Math.random e ajuste o intervalo para 1 a 100.
 Exiba o número gerado no console.*/
 
 function exercise_12(){
-    console.log(Math.random() * 100)
+    console.log(parseInt(Math.random() * 100))
  
     generateAnswerCard('Exercício 12', 'Abra seu console e veja o resultado!');
 }
@@ -300,6 +300,20 @@ Crie um array como [4, -3, 2, -1, 0].
 Use um loop para verificar cada número.
 Substitua os números negativos por 0 e exiba o array no console.*/
 
+function exercise_13(){
+    let numeros = [4, -3, 2, -1, 0];
+
+    numeros.forEach((numero, index) => {
+        if (numero < 0){
+            numeros[index] = 0;
+        }
+    });
+
+    console.log(numeros);
+
+    generateAnswerCard('Exercício 13', 'Abra seu console e veja o resultado!');
+}
+
 /*14. Verificar Palavras Proibidas em um Texto
 Descrição:
 Verifique se uma frase contém palavras proibidas.
@@ -307,6 +321,30 @@ Tarefas:
 Crie um array de palavras proibidas como ['palavra1', 'palavra2'].
 Peça ao usuário uma frase.
 Verifique se a frase contém alguma palavra do array e exiba uma mensagem de alerta.*/
+
+function exercise_14(){
+    let title = "Exercício 14";
+
+    let proibidas = ['carro', 'moto', 'palavra'];
+
+    let body = "Se você digitou alguma das seguintes palavras: " + proibidas + "\n";
+    body += "Um alerta apareceu!"
+    let texto = prompt("Digite uma frase:");
+    let palavras = texto.split(" ")
+    let palavraProibidaDigitada = false;
+
+    palavras.forEach(palavra => {
+        if(proibidas.includes(palavra)){
+            palavraProibidaDigitada = true;
+        }
+    });
+
+    if(palavraProibidaDigitada){
+        alert("Cuidado com o que você escreve!")
+    }
+
+    generateAnswerCard(title, body);
+}
 
 /*15. Gerar uma Lista de Números Pares
 Descrição:
@@ -316,12 +354,25 @@ Use um loop para gerar os números pares.
 Adicione os números a um array e exiba-o no console.
 */
 
+function exercise_15(){
+    let numero = 1;
+    
+    for (numero; numero <= 20; numero++){
+        if( numero % 2 === 0){
+            console.log(numero)
+        }
+    }
+
+    generateAnswerCard('Exercício 15', 'Abra seu console e veja o resultado!');
+}
+
 function generateAnswerCard(title, body){
     card = document.getElementById('cardExample');
+    console.log(card.firstElementChild.firstElementChild.firstElementChild)
     newCard = card.cloneNode(true)
     newCard.id = "exercise-" + title
-    cardTitle = newCard.firstElementChild.firstElementChild
-    cardAnswer = newCard.firstElementChild.firstElementChild.nextElementSibling
+    cardTitle = newCard.firstElementChild.firstElementChild.firstElementChild
+    cardAnswer = newCard.firstElementChild.firstElementChild.firstElementChild.nextElementSibling
     cardTitle.innerText = title
     cardAnswer.innerText = body
     document.getElementById("columns").appendChild(newCard)
@@ -330,10 +381,3 @@ function generateAnswerCard(title, body){
         newCard.classList.toggle('hidden')
     }
 }
-
-function listaExercicio(exercício){
-    // Não usar isso em prodção!!!!
-    eval(exercício + "()")
-}
-
-

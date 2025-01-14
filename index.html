@@ -10,30 +10,67 @@
 </head>
 
 <div class="container mt-5">
-    <div class="row border-solid border-2">
-        <div class="col-sm-12 py-5">
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_1')">Exercício 1</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_2')">Exercício 2</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_3')">Exercício 3</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_4')">Exercício 4</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_5')">Exercício 5</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_6')">Exercício 6</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_7')">Exercício 7</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_8')">Exercício 8</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_9')">Exercício 9</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_10')">Exercício 10</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_11')">Exercício 11</button>
-            <button class="btn btn-primary" onclick="listaExercicio('exercise_12')">Exercício 12</button>
+    <div class="col-sm-12 border-solid border-2">
+        <div class="row py-2 flex justify-content-center">
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_1()">Exercício 1</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_2()">Exercício 2</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_3()">Exercício 3</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_4()">Exercício 4</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_5()">Exercício 5</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_6()">Exercício 6</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_7()">Exercício 7</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_8()">Exercício 8</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_9()">Exercício 9</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_10()">Exercício 10</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_11()">Exercício 11</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_12()">Exercício 12</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_13()">Exercício 13</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_14()">Exercício 14</button>
+            </div>
+            <div class="col-3 m-2">
+                <button class="btn btn-primary btn-block" onclick="exercise_15()">Exercício 15</button>
+            </div>
         </div>
     </div>
 </div>
 
 <div class="container mt-5">
-    <div class="col-sm-4" id="columns">
-        <div class="card w-full hidden" id="cardExample">
-            <div class="card-body">
-              <h5 class="card-title answer-title font-bold">Exercício 1</h5>
-              <p class="card-text answer-body"></p>
+    <div class="col-12">
+        <div class="row" id="columns">
+            <div class="col-sm-4 hidden" id="cardExample">
+                <div class="card w-full mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title answer-title font-bold">Exercício 1</h5>
+                      <p class="card-text answer-body"></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
