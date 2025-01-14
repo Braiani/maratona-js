@@ -14,12 +14,12 @@ function exercise_1(){
 function somaValores(num1, num2){
     let soma = parseInt(num1) + parseInt(num2)
 
-    let card = document.getElementById('cardExample');
+    /* let card = document.getElementById('cardExample');
     cardTitle = card.firstElementChild.firstElementChild
-    cardAnswer = card.firstElementChild.firstElementChild.nextElementSibling
-    cardTitle.innerText = "Exercício 1"
-    cardAnswer.innerText = "Resultado da soma: " + soma
-    card.classList.toggle('hidden')
+    cardAnswer = card.firstElementChild.firstElementChild.nextElementSibling */
+    cardTitle = "Exercício 1"
+    cardAnswer = "Resultado da soma: " + soma
+    generateAnswerCard(cardTitle, cardAnswer);
 }
 
 
@@ -368,7 +368,7 @@ function exercise_15(){
 
 function generateAnswerCard(title, body){
     card = document.getElementById('cardExample');
-    console.log(card.firstElementChild.firstElementChild.firstElementChild)
+
     newCard = card.cloneNode(true)
     newCard.id = "exercise-" + title
     cardTitle = newCard.firstElementChild.firstElementChild.firstElementChild
