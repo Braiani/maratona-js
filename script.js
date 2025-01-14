@@ -269,7 +269,7 @@ function exercise_11(){
 
     let soma = 0;
     letras.forEach(letra => {
-        let vogais = ['a', 'e', 'i', 'o', 'u'];
+        let vogais = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
         if (vogais.includes(letra)){
             soma++;
         }
