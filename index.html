@@ -5,9 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maratona 141 JS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+<div class="container mt-5">
+    <div class="row border-solid border-2">
+        <div class="col-sm-12 py-5">
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_1')">Exercício 1</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_2')">Exercício 2</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_3')">Exercício 3</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_4')">Exercício 4</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_5')">Exercício 5</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_6')">Exercício 6</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_7')">Exercício 7</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_8')">Exercício 8</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_9')">Exercício 9</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_10')">Exercício 10</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_11')">Exercício 11</button>
+            <button class="btn btn-primary" onclick="listaExercicio('exercise_12')">Exercício 12</button>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="col-sm-4" id="columns">
+        <div class="card w-full hidden" id="cardExample">
+            <div class="card-body">
+              <h5 class="card-title answer-title font-bold">Exercício 1</h5>
+              <p class="card-text answer-body"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
